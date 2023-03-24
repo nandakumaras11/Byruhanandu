@@ -2,6 +2,10 @@ import Contact from "../Contact/Contact";
 import { ToggleSwitch } from "../../Components/ToggleSwitch/ToggleSwitch";
 import { useState, useEffect } from "react";
 import "./Gallery.scss";
+import SimpleImageSlider from "react-simple-image-slider";
+import { Button } from "react-bootstrap";
+import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 export const Home = () => {
   const [isVegitable, handleVegitables] = useState(true);
   const fruits = [
@@ -101,6 +105,17 @@ export const Home = () => {
       name: "Beetroot",
     },
   ];
+
+  const images = [
+    { url: "./bg4.jpg" },
+    { url: "./bg5.jpg" },
+    { url: "./bg3.png" },
+  ];
+  const mobileImages = [
+    { url: "./mbg4.jpg" },
+    { url: "./mbg5.jpg" },
+    { url: "./mbg3.jpg" },
+  ];
   const [products, handleProductArray] = useState(vegitables);
 
   useEffect(() => {
@@ -109,103 +124,58 @@ export const Home = () => {
 
   return (
     <>
-      <section id="hero" className="d-flex align-items-center">
-        <div className="container">
-          <div className="row">
-            <div className="typewriter col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-              <h1 data-aos="fade-up">
-                Savor the taste of nature with our fruits and veggies!
-              </h1>
-              {/* <!-- <h2 data-aos="fade-up" data-aos-delay="400">We are team of talented designers making websites with Bootstrap</h2> --> */}
-              <div data-aos="fade-up" data-aos-delay="800">
-                <a href="#about" className="btn-get-started scrollto">
-                  Get Started
-                </a>
-              </div>
-            </div>
-            <div
-              className="col-lg-6 order-1 order-lg-2 hero-img"
-              data-aos="fade-left"
-              data-aos-delay="200"
-            >
-              <img
-                src="./img/sliderImage.webp"
-                className="img-fluid animated"
-                alt=""
-              />
-            </div>
+      <section id="hero">
+        {/* <section id="hero" className="d-flex align-items-center"> */}
+        <SimpleImageSlider
+          width="100%"
+          slideDuration={2}
+          height="70vh"
+          images={window.screen.width < 768 ? mobileImages : images}
+          showBullets={true}
+          showNavs={false}
+          autoPlay={true}
+        />
+        <div className="slider_text" data-aos="zoom-in-right">
+          <div className="slider_txt">
+            <h1>Go Green, Eat Healthy</h1>
+          </div>
+          <div className="slider_button">
+            <Link to="/about">
+              <Button variant="success" size="lg">
+                Why Byruha <FaArrowRight size="0.7em" />{" "}
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
-      <main id="main">
-        {/* <!-- ======= Clients Section ======= --> */}
-        {/* <section id="clients" className="clients clients">
+      <main id="main" className="mt-5">
+        <section id="whoweare" className="whoweare">
           <div className="container">
-            <div className="row">
-              <div className="col-lg-2 col-md-4 col-6">
-                <img
-                  src="./img/clients/client-1.png"
-                  className="img-fluid"
-                  alt=""
-                  data-aos="zoom-in"
-                />
-              </div>
-
-              <div className="col-lg-2 col-md-4 col-6">
-                <img
-                  src="./img/clients/client-2.png"
-                  className="img-fluid"
-                  alt=""
-                  data-aos="zoom-in"
-                  data-aos-delay="100"
-                />
-              </div>
-
-              <div className="col-lg-2 col-md-4 col-6">
-                <img
-                  src="./img/clients/client-3.png"
-                  className="img-fluid"
-                  alt=""
-                  data-aos="zoom-in"
-                  data-aos-delay="200"
-                />
-              </div>
-
-              <div className="col-lg-2 col-md-4 col-6">
-                <img
-                  src="./img/clients/client-4.png"
-                  className="img-fluid"
-                  alt=""
-                  data-aos="zoom-in"
-                  data-aos-delay="300"
-                />
-              </div>
-
-              <div className="col-lg-2 col-md-4 col-6">
-                <img
-                  src="./img/clients/client-5.png"
-                  className="img-fluid"
-                  alt=""
-                  data-aos="zoom-in"
-                  data-aos-delay="400"
-                />
-              </div>
-
-              <div className="col-lg-2 col-md-4 col-6">
-                <img
-                  src="./img/clients/client-6.png"
-                  className="img-fluid"
-                  alt=""
-                  data-aos="zoom-in"
-                  data-aos-delay="500"
-                />
+            <div className="section-title" data-aos="fade-up">
+              <h2>Who we are</h2>
+              <div className="who_we_are_container pl-5 pr-5 mt-5">
+                <div className="who_we_are_img" data-aos="fade-left">
+                  <img className="img-fluid animated" src="./fruithand.png" />
+                </div>
+                <div className="who_we_are_txt " data-aos="fade-right">
+                  {" "}
+                  <p>
+                    Byruha food stuff LLC is one of middle east leading importer
+                    & wholesalers of fresh fruit & vegetables. We import tonnes
+                    of fresh fruits & veggies from Kenya, South Africa, Sri
+                    Lanka, India, China, Egypt, Pakistan, Iran, Turkey, Ukraine
+                    and many more.
+                  </p>
+                  <p>
+                    Headquartered in Dubai, under a wise management we dedicate
+                    ourselves in supplying the region with top quality products
+                    all over the world.By sourcing products from multiple countries, the company is able to provide customers with a diverse selection of high-quality food products year-round. Byruha Food Stuff LLC is committed to providing exceptional customer service and ensuring that all of their products meet the highest standards of quality and freshness.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </section> */}
-        {/* <!-- End Clients Section -->
-
-      <!-- ======= Services Section ======= --> */}
+        </section>
         <section id="services" className="services">
           <div className="container">
             <div className="section-title" data-aos="fade-up">
@@ -395,7 +365,11 @@ export const Home = () => {
                         >
                           <div className="image">
                             <img
-                              src={"../../../img/product/" + item.name + ".png"}
+                              src={
+                                "../../../img/product/" +
+                                item.name.toLowerCase() +
+                                ".png"
+                              }
                               alt={item.name}
                             />
                           </div>{" "}

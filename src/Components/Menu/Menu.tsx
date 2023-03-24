@@ -1,6 +1,16 @@
-import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { NavHashLink } from "react-router-hash-link";
+import "./Menu.css";
+export const useScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+};
 const Menu = () => {
+  const [mobileMenuOpned, displayMobileMenu] = useState(false);
   const scrollWithOffset = (el: any) => {
     const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
     const yOffset = -80;
@@ -15,22 +25,21 @@ const Menu = () => {
               <img src="./logo.png" className="img-fluid" />
             </div>
           </Link>
-
-          <nav id="navbar" className="navbar">
+          <nav
+            id="navbar"
+            className={mobileMenuOpned ? "navbar navbar-mobile" : "navbar"}
+          >
             <ul>
               <li>
-                <Link className="nav-link scrollto" to="/">
+                <Link className="nav-link scrollto" to="/home">
                   Home
                 </Link>
               </li>
-              {/* <li><a className="nav-link scrollto active" href="#hero">Home</a></li> */}
-              {/* <li><a className="nav-link scrollto" href="#about">About</a></li> */}
               <li>
                 <Link className="nav-link scrollto" to="/about">
                   About
                 </Link>
               </li>
-
               <li>
                 <NavHashLink
                   to="/#services"
@@ -40,28 +49,40 @@ const Menu = () => {
                   Services
                 </NavHashLink>
               </li>
-              <li>
+              {/* <li>
                 <Link className="nav-link scrollto" to="/gallery">
                   Gallery
                 </Link>
-              </li>
-              <li>
-                <a className="nav-link scrollto" href="#portfolio">
-                  Portfolio
-                </a>
-              </li>
-              <li>
-                <a className="nav-link scrollto" href="#contact">
-                  Contact
-                </a>
-              </li>
-              {/* <li>
-                <a className="getstarted scrollto" href="#about">
-                  Get Started
-                </a>
               </li> */}
+              <li>
+                <NavHashLink
+                  to="/#portfolio"
+                  smooth
+                  scroll={(el) => scrollWithOffset(el)}
+                >
+                  Products
+                </NavHashLink>
+              </li>
+              <li>
+                <NavHashLink
+                  to="/#contact"
+                  smooth
+                  scroll={(el) => scrollWithOffset(el)}
+                >
+                  Contact
+                </NavHashLink>
+              </li>
             </ul>
-            <i className="bi bi-list mobile-nav-toggle"></i>
+            <i
+              className={
+                mobileMenuOpned
+                  ? "bi mobile-nav-toggle bi-x"
+                  : "bi bi-list mobile-nav-toggle"
+              }
+              onClick={() => {
+                displayMobileMenu(!mobileMenuOpned);
+              }}
+            ></i>
           </nav>
         </div>
       </header>

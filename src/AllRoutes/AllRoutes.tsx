@@ -10,6 +10,10 @@ export default function AllRoutes() {
     element: <Home/>
   },
     {
+    path: "/home",
+    element: <Home/>
+  },
+    {
     path: "/gallery",
     element: <Gallery/>
   },

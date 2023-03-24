@@ -7,10 +7,9 @@ export const SocialMediaRightBar = () => {
         <a href="whatsapp://send?text=I am interested in buying. Can you provide me with pricing and shipping information?!&phone=+971525966515">
           <div className="social-btn  animate__animated animate__pulse animate__infinite	infinite color-whatsapp">
             <div className="icons8-whatsapp"></div>
-            {/* <p className="order-1 google-font margin-instagram">whats app</p> */}
           </div>
         </a>
-        <a href="mailto:sancruz.int@gmail.com">
+        <a href="mailto:byruhafoodstuff@gmail.com">
           <div className="social-btn  animate__animated animate__pulse animate__infinite	infinite color-gmail">
             <FaEnvelope className="gmail" />
           </div>

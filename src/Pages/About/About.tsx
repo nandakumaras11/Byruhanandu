@@ -5,7 +5,11 @@ import Contact from "../Contact/Contact";
 export const About = ({ marginTop = 70 }) => {
   return (
     <>
-      <img className="aboutUsBGImg2"    data-aos="fade-left" src="./img/product/pineapple.png" />
+      <img
+        className="aboutUsBGImg2"
+        data-aos="fade-left"
+        src="./img/product/pineapple.png"
+      />
       <img
         className="aboutUsBGImg1"
         data-aos="fade-right"
@@ -101,8 +105,8 @@ export const About = ({ marginTop = 70 }) => {
                       />
                       <p>
                         <strong>Happy Clients</strong>: Quality produce,
-                        efficient shipping, sustainable practices, Happy
-                        Clientsworldwide.
+                        efficient shipping, sustainable practices, Happy Clients
+                        world wide.
                       </p>
                     </div>
                   </div>
@@ -134,7 +138,7 @@ export const About = ({ marginTop = 70 }) => {
                       />
                       <p>
                         <strong>Five year</strong>: Experienced professional
-                        with five years' expertise in ex[prting field.
+                        with five years' expertise in exporting field.
                       </p>
                     </div>
                   </div>

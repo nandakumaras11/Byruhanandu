@@ -8,7 +8,7 @@ const Contact = () => {
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115495.19362806421!2d55.286668780596166!3d25.229352293199558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f67b3189061c7%3A0x85bf4debb6c37086!2sAl%20Aweer%20Central%20Fruit%20%26%20Vegetable%20Market!5e0!3m2!1sen!2sin!4v1679095616496!5m2!1sen!2sin"
           width="50%"
-          height="450"
+          height="350"
           style={{ border: "0" }}
           allowFullScreen={false}
           loading="lazy"
@@ -17,7 +17,7 @@ const Contact = () => {
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115495.19362806421!2d55.286668780596166!3d25.229352293199558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f67b3189061c7%3A0x85bf4debb6c37086!2sAl%20Aweer%20Central%20Fruit%20%26%20Vegetable%20Market!5e0!3m2!1sen!2sin!4v1679095616496!5m2!1sen!2sin"
           width="50%"
-          height="450"
+          height="350"
           style={{ border: "0" }}
           allowFullScreen={false}
           loading="lazy"
@@ -27,7 +27,7 @@ const Contact = () => {
           <div
             className="col-lg-7 col-md-6 mt-2 mt-md-0"
             data-aos="fade-up"
-            data-aos-delay="200"
+            // data-aos-delay="200"
           >
             <div className="info">
               <div>
