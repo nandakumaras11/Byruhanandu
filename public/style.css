@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400&display=swap");
 :root {
   --primary-color: rgb(115 175 66);
-  --darkGreen:#035f0f;
+  --darkGreen: #035f0f;
   /* --primary-color: #67b84f; */
   /* --primary-color: #6c3f99; */
 }
@@ -547,6 +547,9 @@ h4 {
 }
 
 @media (max-width: 768px) {
+  #header{
+    padding: 0;
+  }
   .navbar-mobile ul {
     display: block;
     position: absolute;
@@ -572,15 +575,18 @@ h4 {
     /* margin-top: 32px; */
     padding-bottom: 0;
   }
+  #hero video {
+    margin-top: 12%;
+  }
 
   #hero h1 {
-    font-size:1.6em;
+    font-size: 1.6em;
     line-height: 0px;
     /* line-height: 70px; */
   }
 
-  .slider_text{
-top: 59%;
+  .slider_text {
+    top: 59%;
   }
 
   #hero h2 {
@@ -617,8 +623,8 @@ section {
   padding: 2% 0;
   overflow: hidden;
 }
-#contact{
-  padding-bottom:0 !important;
+#contact {
+  padding-bottom: 0 !important;
 }
 .section-bg {
   background-color: #f7fbfe;
@@ -847,11 +853,11 @@ section {
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
 }
-.slider_txt h1{
- font-family: 'Kaushan Script', cursive;
- text-align: center;
- color: var(--darkGreen);
- font-weight: 600;
+.slider_txt h1 {
+  font-family: "Kaushan Script", cursive;
+  text-align: center;
+  color: var(--darkGreen);
+  font-weight: 600;
 }
 /* #about {
   background-image: url(./bg2.png);

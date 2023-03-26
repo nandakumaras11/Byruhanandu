@@ -63,3 +63,12 @@ width: 50%;
     margin-top: 2%;
     color: white;
 }
+@media (max-width: 768px) {
+  .contact_us_card_container{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .mapBox{
+    width: 100%;
+  }
+}

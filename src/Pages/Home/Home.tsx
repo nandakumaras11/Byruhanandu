@@ -112,9 +112,12 @@ export const Home = () => {
     { url: "./bg3.png" },
   ];
   const mobileImages = [
-    { url: "./mbg4.jpg" },
-    { url: "./mbg5.jpg" },
-    { url: "./mbg3.jpg" },
+    {
+      url: "https://nrtcgroup.com/wp-content/themes/nrtc-theme/images/slide-baners/about-us.jpg",
+    },
+    {
+      url: "https://nrtcgroup.com/wp-content/themes/nrtc-theme/images/slide-baners/our-clients-new-2.jpg",
+    },
   ];
   const [products, handleProductArray] = useState(vegitables);
 
@@ -135,8 +138,16 @@ export const Home = () => {
           showNavs={false}
           autoPlay={true}
         /> */}
+
         <video loop autoPlay={true} muted style={{ width: "100%" }}>
-          <source src="./bghome.mp4" type="video/mp4" />
+          <source
+            src={
+              window.screen.width < 768
+                ? " http://techslides.com/demos/sample-videos/small.mp4"
+                : "./bghome.mp4"
+            }
+            type="video/mp4"
+          />
         </video>
         {/* <video src="./bghome.mp4" autoPlay={true} style={{width:"100%"}} /> */}
         <div className="slider_text" data-aos="zoom-in-right">
@@ -153,12 +164,11 @@ export const Home = () => {
         </div>
       </section>
       <div className="slider_txt">
-            <h1>Go Green ! Eat Healthy !</h1>
-          </div>
+        <h1>Go Green ! Eat Healthy !</h1>
+      </div>
       <main id="main">
         <section id="whoweare" className="whoweare">
           <div className="container">
-       
             <div className="section-title" data-aos="fade-up">
               {/* <h2>Who we are</h2> */}
               <div className="who_we_are_container">
@@ -167,15 +177,18 @@ export const Home = () => {
                 </div>
                 <div className="who_we_are_txt " data-aos="fade-right">
                   {" "}
-                  <div className="who_we_are_txt_heading">Fruits & Veggies from Every Origin, Specially Chosen by BYRUHA</div>
+                  <div className="who_we_are_txt_heading">
+                    Fruits & Veggies from Every Origin, Specially Chosen by{" "}
+                    <b>BYRUHA</b>
+                  </div>
                   <p>
                     Byruha food stuff LLC is one of middle east leading importer
                     & wholesalers of fresh fruit & vegetables. We import tonnes
                     of fresh fruits & veggies from Kenya, South Africa, Sri
                     Lanka, India, China, Egypt, Pakistan, Iran, Turkey, Ukraine
-                    and many more. Headquartered in Dubai, under a wise management we dedicate
-                    ourselves in supplying the region with top quality products
-                    all over the world.
+                    and many more. Headquartered in Dubai, under a wise
+                    management we dedicate ourselves in supplying the region
+                    with top quality products all over the world.
                     {/* .By sourcing products from multiple
                     countries, the company is able to provide customers with a
                     diverse selection of high-quality food products year-round.
