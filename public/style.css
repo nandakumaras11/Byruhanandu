@@ -24,6 +24,9 @@ p {
 .who_we_are_img img {
   border-radius: 11px;
 }
+.who_we_are_txt_heading {
+  font-size: 2em;
+}
 .who_we_are_txt {
   width: 65%;
   /* box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); */
@@ -31,7 +34,7 @@ p {
   background: white;
   border-radius: 11px;
   position: relative;
-  right: 6%;
+  right: 2%;
   padding: 2% 3%;
   font-size: 1.1em;
   text-transform: capitalize;
@@ -844,13 +847,19 @@ section {
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
 }
-#about {
+.slider_txt h1{
+ font-family: 'Kaushan Script', cursive;
+ text-align: center;
+ color: var(--darkGreen);
+ font-weight: 600;
+}
+/* #about {
   background-image: url(./bg2.png);
   background-size: contain;
   background-position: bottom;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
+} */
 .services .icon-box {
   padding: 30px;
   position: relative;

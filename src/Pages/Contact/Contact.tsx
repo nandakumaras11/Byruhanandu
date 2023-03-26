@@ -22,26 +22,29 @@ const Contact = () => {
             <div className="contactCol1 info">
               <i className="ri-map-pin-line"></i>
               <p>
-                Block- 1 Shop 12Central fruit & vegetable market, Al
-                Aweer,Dubai-UAE Fresh Market Store No: B9 Central fruit and
-                vegetable market, Al Aweer, Dubai-UAE
+              <b>[Wholesale]</b>  Fresh Market Store No. B9 Central Fruit & Vegitable Market, Al
+                Aweer, Dubai-United Arab Emirates
               </p>
             </div>
             {/* <div className="contactCol2"> */}{" "}
             <div className="contactCol2 info">
               <i className="ri-mail-send-line"></i>
-             <p><a href="mailto:byruhafoodstuff@gmail.com">byruhafoodstuff@gmail.com</a></p>
+              <p>
+                <a href="mailto:byruhafoodstuff@gmail.com">
+                  byruhafoodstuff@gmail.com
+                </a>
+              </p>
               {/* <a href="mailto:byruhafoodstuff@gmail.com">byruhafoodstuff@gmail.com</a> */}
             </div>
             <div className="contactCol3 info">
               <i className="ri-phone-line"></i>
               <p>
-              {/* 971525966515 */}
-              <a href="tel:+971525966515">+971525966515</a>
+                {/* 971525966515 */}
+                <a href="tel:+971525966515">+971525966515</a>
               </p>
             </div>
           </div>
-     
+
           <div className="mapBox">
             <div className="contactColMap">
               <iframe
@@ -57,26 +60,28 @@ const Contact = () => {
             <div className="contactCol1 info">
               <i className="ri-map-pin-line"></i>
               <p>
-                Block- 1 Shop 12Central fruit & vegetable market, Al
-                Aweer,Dubai-UAE Fresh Market Store No: B9 Central fruit and
-                vegetable market, Al Aweer, Dubai-UAE
+               <b>[Retail]</b> Block-1 Shop-12 Central Fruit & Vegitable Market,Al
+                Aweer, Dubai-United Arab Emirates
               </p>
             </div>
             {/* <div className="contactCol2"> */}{" "}
             <div className="contactCol2 info">
               <i className="ri-mail-send-line"></i>
-             <p><a href="mailto:byruhafoodstuff@gmail.com">byruhafoodstuff@gmail.com</a></p>
+              <p>
+                <a href="mailto:byruhafoodstuff@gmail.com">
+                  byruhafoodstuff@gmail.com
+                </a>
+              </p>
               {/* <a href="mailto:byruhafoodstuff@gmail.com">byruhafoodstuff@gmail.com</a> */}
             </div>
             <div className="contactCol3 info">
               <i className="ri-phone-line"></i>
               <p>
-              {/* 971525966515 */}
-              <a href="tel:+971525966515">+971525966515</a>
+                {/* 971525966515 */}
+                <a href="tel:+971525966515">+971525966515</a>
               </p>
             </div>
           </div>
-     
         </div>
         {/* <div className="row mt-4">
           <div

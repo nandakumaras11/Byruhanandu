@@ -1,5 +1,5 @@
 import "./SocialMediaRightBar.css"
-import { FaEnvelope, FaFacebook} from 'react-icons/fa';
+import { FaEnvelope, FaFacebook, FaFacebookSquare, FaInstagram, FaInstagramSquare} from 'react-icons/fa';
 export const SocialMediaRightBar = () => {
   return (
     <>
@@ -16,12 +16,13 @@ export const SocialMediaRightBar = () => {
         </a>
         <a href="https://www.facebook.com/people/Byruha-Foodstuff/100090079361665">
           <div className="social-btn  animate__animated animate__pulse animate__infinite	infinite color-fb">
-            <FaFacebook className="fb" />
+            <FaFacebookSquare className="fb" />
+            
           </div>
         </a>
         <a href="https://www.instagram.com/byruhafoodstuff/">
           <div className="social-btn  animate__animated animate__pulse animate__infinite	infinite color-instagram">
-            <div className="icons8-instagram"></div>
+            <FaInstagram className="color-instagram" />
             {/* <p className="order-1 google-font margin-instagram">instagram</p> */}
           </div>
         </a>

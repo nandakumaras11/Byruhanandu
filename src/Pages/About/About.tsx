@@ -1,7 +1,6 @@
 import CountUp from "react-countup";
+import { Banner } from "../../Components/Banner/Banner";
 import "./About.css";
-import Contact from "../Contact/Contact";
-
 export const About = ({ marginTop = 70 }) => {
   return (
     <>
@@ -15,11 +14,12 @@ export const About = ({ marginTop = 70 }) => {
         data-aos="fade-right"
         src="https://freepngimg.com/thumb/orange/19-orange-png-image-download.png"
       />
+      <Banner heading="About Us" />
       <section id="about" style={{ marginTop: marginTop }} className="about">
         <div className="container">
-          <div className="section-title" data-aos="fade-up">
+          {/* <div className="section-title" data-aos="fade-up">
             <h2>About Us</h2>
-          </div>
+          </div> */}
 
           <div className="row content">
             <div className="col-lg-6" data-aos="fade-up" data-aos-delay="150">
@@ -171,7 +171,8 @@ export const About = ({ marginTop = 70 }) => {
           </div>
         </div>
       </section>
-      <Contact />
+      <div className="copyright">© Copyright Byruha. All Rights Reserved</div>
+      {/* <Contact /> */}
     </>
   );
 };
