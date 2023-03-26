@@ -1,0 +1,65 @@
+/* .contactColMap{
+width: 50%;
+} */
+/* .contactCol1{
+    width: 30%;
+} */
+/* .contactCol2{   width: 30%;} */
+/* .contactCol3{   width: 100%; } */
+.mapBox:hover{
+    filter: grayscale(0.2)
+    /* transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1) !important; */
+    /* transform: scale(1); */
+}
+.mapBox {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  flex-direction: column;
+  box-shadow: 0px 11px 45px 4px rgba(0, 0, 0, 0.18);
+  border-radius: 10px;
+}
+.contact_us_card_container {
+  display: flex;
+  column-gap: 1%;
+}
+.contact .info {
+  color: #444444;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact .info i {
+  width: 5%;
+  font-size: 32px;
+  color: var(--primary-color);
+  float: left;
+  line-height: 1;
+}
+.contact iframe {
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  /* border-radius: 10px !important; */
+}
+
+.contact .info p {
+  /* padding: 0 0 10px 42px; */
+  width: 80%;
+  line-height: 28px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.contact .info p a{
+    color: black;
+}
+.contactCol1.info {
+    margin-top: 2%;
+}
+.copyright{
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+    background-color: var(--primary-color);
+    margin-top: 2%;
+    color: white;
+}

@@ -126,7 +126,7 @@ export const Home = () => {
     <>
       <section id="hero">
         {/* <section id="hero" className="d-flex align-items-center"> */}
-        <SimpleImageSlider
+        {/* <SimpleImageSlider
           width="100%"
           slideDuration={2}
           height="70vh"
@@ -134,43 +134,60 @@ export const Home = () => {
           showBullets={true}
           showNavs={false}
           autoPlay={true}
-        />
+        /> */}
+        <video loop autoPlay={true} muted style={{ width: "100%" }}>
+          <source src="./bghome.mp4" type="video/mp4" />
+        </video>
+        {/* <video src="./bghome.mp4" autoPlay={true} style={{width:"100%"}} /> */}
         <div className="slider_text" data-aos="zoom-in-right">
           <div className="slider_txt">
             <h1>Go Green, Eat Healthy</h1>
           </div>
           <div className="slider_button">
             <Link to="/about">
-              <Button variant="success" size="lg">
+              <Button variant="success">
                 Why Byruha <FaArrowRight size="0.7em" />{" "}
               </Button>
             </Link>
           </div>
         </div>
       </section>
-      <main id="main" className="mt-5">
+      <main id="main">
         <section id="whoweare" className="whoweare">
           <div className="container">
             <div className="section-title" data-aos="fade-up">
-              <h2>Who we are</h2>
+              {/* <h2>Who we are</h2> */}
               <div className="who_we_are_container pl-5 pr-5 mt-5">
                 <div className="who_we_are_img" data-aos="fade-left">
-                  <img className="img-fluid animated" src="./fruithand.png" />
+                  <img className="img-fluid animated" src="./fruithand.jpg" />
                 </div>
                 <div className="who_we_are_txt " data-aos="fade-right">
                   {" "}
+                  <h1>Spices from Every Origin, Specially Chosen by BYRUHA</h1>
                   <p>
                     Byruha food stuff LLC is one of middle east leading importer
                     & wholesalers of fresh fruit & vegetables. We import tonnes
                     of fresh fruits & veggies from Kenya, South Africa, Sri
                     Lanka, India, China, Egypt, Pakistan, Iran, Turkey, Ukraine
-                    and many more.
+                    and many more. Headquartered in Dubai, under a wise management we dedicate
+                    ourselves in supplying the region with top quality products
+                    all over the world.By sourcing products from multiple
+                    countries, the company is able to provide customers with a
+                    diverse selection of high-quality food products year-round.
+                    Byruha Food Stuff LLC is committed to providing exceptional
+                    customer service and ensuring that all of their products
+                    meet the highest standards of quality and freshness.
                   </p>
-                  <p>
+                  {/* <p>
                     Headquartered in Dubai, under a wise management we dedicate
                     ourselves in supplying the region with top quality products
-                    all over the world.By sourcing products from multiple countries, the company is able to provide customers with a diverse selection of high-quality food products year-round. Byruha Food Stuff LLC is committed to providing exceptional customer service and ensuring that all of their products meet the highest standards of quality and freshness.
-                  </p>
+                    all over the world.By sourcing products from multiple
+                    countries, the company is able to provide customers with a
+                    diverse selection of high-quality food products year-round.
+                    Byruha Food Stuff LLC is committed to providing exceptional
+                    customer service and ensuring that all of their products
+                    meet the highest standards of quality and freshness.
+                  </p> */}
                 </div>
               </div>
             </div>

@@ -54,7 +54,12 @@ $medium-light-color: #013747;
     .box {
       flex: 1 1 15%;
       // background:#00755E;
-      background: linear-gradient(180deg, #00755e52 48%, #00755e 50%);
+      background: linear-gradient(
+        180deg,
+       var(--primary-color) 48%,
+        var(--darkGreen) 50%
+      );
+      // background: linear-gradient(180deg, #00755e52 48%, #00755e 50%);
 
       box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 24px;
       padding: 25px;

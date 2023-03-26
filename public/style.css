@@ -1,16 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400&display=swap");
 :root {
-  --primary-color: #67b84f;
+  --primary-color: rgb(115 175 66);
+  --darkGreen:#035f0f;
+  /* --primary-color: #67b84f; */
   /* --primary-color: #6c3f99; */
 }
 p {
   line-height: 2;
 }
 
-.who_we_are_container{
+.who_we_are_container {
   display: flex;
   /* width: 99%; */
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   flex: 1;
   text-align: left;
@@ -20,12 +22,16 @@ p {
   width: 28%;
 }
 .who_we_are_img img {
-border-radius: 11px;
+  border-radius: 11px;
 }
 .who_we_are_txt {
   width: 65%;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0px 11px 45px 4px rgba(0, 0, 0, 0.18);
+  background: white;
   border-radius: 11px;
+  position: relative;
+  right: 6%;
   padding: 2% 3%;
   font-size: 1.1em;
   text-transform: capitalize;
@@ -123,15 +129,15 @@ h4 {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
-  .who_we_are_container{
+  .who_we_are_container {
     display: flex;
     flex-direction: column;
     row-gap: 26px;
   }
-.who_we_are_img, .who_we_are_txt{
-  width: 100%;
-}
-  
+  .who_we_are_img,
+  .who_we_are_txt {
+    width: 100%;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -146,12 +152,11 @@ h4 {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
-.slider_text{
+.slider_text {
   position: absolute;
   top: 45%;
   left: 12%;
-  line-height: 4;
-
+  line-height: 0;
 }
 
 #header.header-scrolled {
@@ -363,7 +368,6 @@ h4 {
   right: 1%;
   padding: 0%;
   background-color: var(--primary-color);
-
 }
 
 .navbar-mobile ul {
@@ -451,11 +455,11 @@ h4 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 70vh;
+  height: 80vh;
   position: relative;
   /* margin-top: 70px; */
   /* margin-top: 41px; */
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
   margin-top: 0px;
   /* background-image: url(vecteezy_vegetables-background-with-text-space_6033469.jpg);
     background-size: contain; 
@@ -463,8 +467,8 @@ h4 {
     background-position: center center; */
 }
 /*  */
-.rsis-container div{
-  background-color: rgba(200,100,0,.5);
+.rsis-container div {
+  background-color: rgba(200, 100, 0, 0.5);
   background-blend-mode: multiply;
 }
 .rsis-image {
@@ -476,10 +480,13 @@ h4 {
 #hero h1 {
   margin: 0 0 10px 0;
   font-size: 48px;
-  /* font-weight: 700; */
-  line-height: 56px;
+  line-height: 30px;
   color: white;
   margin: 0 0 30px 0;
+  font-family: "Kaushan Script", cursive;
+  font-weight: 600;
+  text-shadow: 2px 0 #080808, -2px 0 #030303, 0 2px #141414, 0 -2px #0b0b0b,
+    1px 1px #040404, -1px -1px #080808, 1px -1px #101010, -1px 1px #0d0d0d;
 }
 
 #hero h2 {
@@ -557,16 +564,20 @@ h4 {
     max-height: 110px;
   }
   #hero {
-    background-color: #6c3f991c;
+    /* background-color: #6c3f991c; */
     margin-top: -7px;
     /* margin-top: 32px; */
     padding-bottom: 0;
   }
 
   #hero h1 {
-    font-size: 52px;
-    /* line-height: 36px; */
-    line-height: 70px;
+    font-size:1.6em;
+    line-height: 0px;
+    /* line-height: 70px; */
+  }
+
+  .slider_text{
+top: 59%;
   }
 
   #hero h2 {
@@ -600,10 +611,12 @@ h4 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 2% 0;
   overflow: hidden;
 }
-
+#contact{
+  padding-bottom:0 !important;
+}
 .section-bg {
   background-color: #f7fbfe;
 }
@@ -829,7 +842,7 @@ section {
   background-size: contain;
   background-position: bottom;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 #about {
   background-image: url(./bg2.png);
@@ -1577,29 +1590,6 @@ section {
 .contact .social-links a:hover {
   background: var(--primary-color);
   color: #fff;
-}
-
-.contact .info {
-  color: #444444;
-}
-
-.contact .info i {
-  font-size: 32px;
-  color: var(--primary-color);
-  float: left;
-  line-height: 1;
-}
-.contact iframe {
-  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
-  padding: 5px;
-  border-radius: 10px !important;
-}
-
-.contact .info p {
-  padding: 0 0 10px 42px;
-  line-height: 28px;
-  font-size: 14px;
-  font-weight: 600;
 }
 
 .contact .php-email-form .error-message {
