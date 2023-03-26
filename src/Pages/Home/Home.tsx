@@ -143,7 +143,7 @@ export const Home = () => {
           <source
             src={
               window.screen.width < 768
-                ? " http://techslides.com/demos/sample-videos/small.mp4"
+                ? " ./mob.mp4"
                 : "./bghome.mp4"
             }
             type="video/mp4"

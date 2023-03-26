@@ -4,7 +4,7 @@ import "./About.css";
 export const About = ({ marginTop = 70 }) => {
   return (
     <>
-      <img
+      {/* <img
         className="aboutUsBGImg2"
         data-aos="fade-left"
         src="./img/product/pineapple.png"
@@ -13,9 +13,9 @@ export const About = ({ marginTop = 70 }) => {
         className="aboutUsBGImg1"
         data-aos="fade-right"
         src="https://freepngimg.com/thumb/orange/19-orange-png-image-download.png"
-      />
+      /> */}
       <Banner heading="About Us" />
-      <section id="about" style={{ marginTop: marginTop }} className="about">
+      <section id="about" className="about">
         <div className="container">
           {/* <div className="section-title" data-aos="fade-up">
             <h2>About Us</h2>

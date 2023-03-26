@@ -576,7 +576,7 @@ h4 {
     padding-bottom: 0;
   }
   #hero video {
-    margin-top: 12%;
+    margin-top: 10%;
   }
 
   #hero h1 {
@@ -859,13 +859,13 @@ section {
   color: var(--darkGreen);
   font-weight: 600;
 }
-/* #about {
-  background-image: url(./bg2.png);
-  background-size: contain;
-  background-position: bottom;
+#about {
+  background-image: url(./bg6.png);
+  background-size: cover;
+  background-position: top;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-} */
+  /* background-attachment: fixed; */
+}
 .services .icon-box {
   padding: 30px;
   position: relative;
