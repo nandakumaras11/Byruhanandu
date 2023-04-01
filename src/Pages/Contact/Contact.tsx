@@ -22,8 +22,8 @@ const Contact = () => {
             <div className="contactCol1 info">
               <i className="ri-map-pin-line"></i>
               <p>
-              <b>[Wholesale]</b>  Fresh Market Store No. B9 Central Fruit & Vegitable Market, Al
-                Aweer, Dubai-United Arab Emirates
+                <b>[Wholesale]</b> Fresh Market Store No. B9 Central Fruit &
+                Vegetable Market, Al Aweer, Dubai-United Arab Emirates
               </p>
             </div>
             {/* <div className="contactCol2"> */}{" "}
@@ -34,13 +34,12 @@ const Contact = () => {
                   byruhafoodstuff@gmail.com
                 </a>
               </p>
-              {/* <a href="mailto:byruhafoodstuff@gmail.com">byruhafoodstuff@gmail.com</a> */}
             </div>
             <div className="contactCol3 info">
               <i className="ri-phone-line"></i>
               <p>
-                {/* 971525966515 */}
-                <a href="tel:+971525966515">+971525966515</a>
+                <a href="tel:+971525966515">+971525966515</a>,
+                <a href="tel:+971525966515">+97143211660</a>
               </p>
             </div>
           </div>
@@ -60,8 +59,8 @@ const Contact = () => {
             <div className="contactCol1 info">
               <i className="ri-map-pin-line"></i>
               <p>
-               <b>[Retail]</b> Block-1 Shop-12 Central Fruit & Vegitable Market,Al
-                Aweer, Dubai-United Arab Emirates
+                <b>[Retail]</b> Block-1 Shop-12 Central Fruit & Vegetable
+                Market,Al Aweer, Dubai-United Arab Emirates
               </p>
             </div>
             {/* <div className="contactCol2"> */}{" "}
@@ -78,7 +77,8 @@ const Contact = () => {
               <i className="ri-phone-line"></i>
               <p>
                 {/* 971525966515 */}
-                <a href="tel:+971525966515">+971525966515</a>
+                <a href="tel:+971525966515">+971525966515</a>,
+                <a href="tel:+971525966515">+97143211660</a>
               </p>
             </div>
           </div>

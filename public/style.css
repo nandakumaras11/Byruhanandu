@@ -25,7 +25,7 @@ p {
   border-radius: 11px;
 }
 .who_we_are_txt_heading {
-  font-size: 2em;
+  font-size: 1.8em;
 }
 .who_we_are_txt {
   width: 65%;
@@ -140,6 +140,10 @@ h4 {
   .who_we_are_img,
   .who_we_are_txt {
     width: 100%;
+    padding: 5%;
+  }
+  .who_we_are_txt{
+    right: 0;
   }
 }
 

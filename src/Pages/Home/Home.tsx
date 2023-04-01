@@ -141,27 +141,10 @@ export const Home = () => {
 
         <video loop autoPlay={true} muted style={{ width: "100%" }}>
           <source
-            src={
-              window.screen.width < 768
-                ? " ./mob.mp4"
-                : "./bghome.mp4"
-            }
+            src={window.screen.width < 768 ? " ./mob.mp4" : "./bghome.mp4"}
             type="video/mp4"
           />
         </video>
-        {/* <video src="./bghome.mp4" autoPlay={true} style={{width:"100%"}} /> */}
-        <div className="slider_text" data-aos="zoom-in-right">
-          {/* <div className="slider_txt">
-            <h1>Go Green, Eat Healthy</h1>
-          </div> */}
-          {/* <div className="slider_button">
-            <Link to="/about">
-              <Button variant="success">
-                Why Byruha <FaArrowRight size="0.7em" />{" "}
-              </Button>
-            </Link>
-          </div> */}
-        </div>
       </section>
       <div className="slider_txt">
         <h1>Go Green ! Eat Healthy !</h1>
@@ -189,23 +172,7 @@ export const Home = () => {
                     and many more. Headquartered in Dubai, under a wise
                     management we dedicate ourselves in supplying the region
                     with top quality products all over the world.
-                    {/* .By sourcing products from multiple
-                    countries, the company is able to provide customers with a
-                    diverse selection of high-quality food products year-round.
-                    Byruha Food Stuff LLC is committed to providing exceptional
-                    customer service and ensuring that all of their products
-                    meet the highest standards of quality and freshness. */}
                   </p>
-                  {/* <p>
-                    Headquartered in Dubai, under a wise management we dedicate
-                    ourselves in supplying the region with top quality products
-                    all over the world.By sourcing products from multiple
-                    countries, the company is able to provide customers with a
-                    diverse selection of high-quality food products year-round.
-                    Byruha Food Stuff LLC is committed to providing exceptional
-                    customer service and ensuring that all of their products
-                    meet the highest standards of quality and freshness.
-                  </p> */}
                 </div>
               </div>
             </div>
@@ -232,7 +199,9 @@ export const Home = () => {
                     <a href="">Wholesale</a>
                   </h4>
                   <p className="description">
-                    Bulk supply of fresh produce for global distribution.
+                    Bulk supply of fresh produce for global distribution along
+                    with Demand-driven container bookings for local market-based
+                    wholesale vendors.
                   </p>
                 </div>
               </div>
@@ -250,7 +219,10 @@ export const Home = () => {
                     <a href="">Retail</a>
                   </h4>
                   <p className="description">
-                    Fresh, quality produce for retail customers worldwide.
+                    Providing high-quality, fresh products for our 250+
+                    well-known, reputable clients in the key marketplaces, which
+                    include restaurants, supermarkets, hypermarkets, and 200+
+                    retail customers.
                   </p>
                 </div>
               </div>
@@ -268,8 +240,11 @@ export const Home = () => {
                     <a href=""> International business</a>
                   </h4>
                   <p className="description">
-                    International business with Kenya, South Africa, Sri Lanka,
-                    India, China, Egypt, Pakistan, Iran, Turkey, Ukraine.
+                    International business with United States, Poland, Italy,
+                    Kenya, South Africa, Sri Lanka, India, China, Egypt,
+                    Pakistan, Iran, Turkey, Ukraine. Also handling intermediary
+                    role in establishing connections between international
+                    suppliers and clients.
                   </p>
                 </div>
               </div>
@@ -288,7 +263,9 @@ export const Home = () => {
                   </h4>
                   <p className="description">
                     In-house logistics and supply chain management for efficient
-                    operations.
+                    operations. In addition we provide local market merchants
+                    logistical support by arranging containers for them from
+                    source nations in a hassle free manner.
                   </p>
                 </div>
               </div>
@@ -326,7 +303,8 @@ export const Home = () => {
                   </h4>
                   <p className="description">
                     Superior quality products and services to exceed
-                    expectations.
+                    expectations. We strive to maintain quality by buying items
+                    that correspond to the right seasons.
                   </p>
                 </div>
               </div>
@@ -364,7 +342,8 @@ export const Home = () => {
                     <a href="">Re-Exporting</a>
                   </h4>
                   <p className="description">
-                    Exporting previously imported goods to new markets.
+                    Exporting previously imported goods to GCC countries, Sri
+                    Lanka, India, Maldives, Seychelles.
                   </p>
                 </div>
               </div>

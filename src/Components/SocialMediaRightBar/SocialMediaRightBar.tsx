@@ -1,5 +1,7 @@
+import { FaPhone } from "react-icons/fa";
 import "./SocialMediaRightBar.css"
-import { FaEnvelope, FaFacebook, FaFacebookSquare, FaInstagram, FaInstagramSquare} from 'react-icons/fa';
+import { FaEnvelope, FaFacebookSquare, FaInstagram} from 'react-icons/fa';
+import { FaPhoneAlt } from "react-icons/fa";
 export const SocialMediaRightBar = () => {
   return (
     <>
@@ -7,6 +9,12 @@ export const SocialMediaRightBar = () => {
         <a href="whatsapp://send?text=I am interested in buying. Can you provide me with pricing and shipping information?!&phone=+971525966515">
           <div className="social-btn  animate__animated animate__pulse animate__infinite	infinite color-whatsapp">
             <div className="icons8-whatsapp"></div>
+          </div>
+        </a>
+
+        <a href="tel:+97143211660">
+        <div className="social-btn  animate__animated animate__pulse animate__infinite	infinite color-fb">
+            <FaPhoneAlt  className="fb" />
           </div>
         </a>
         <a href="mailto:byruhafoodstuff@gmail.com">
